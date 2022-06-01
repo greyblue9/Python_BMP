@@ -9632,11 +9632,8 @@ def reduce24bitimagebits(
                     sysmsg['colorquant'],
                     '*',
                     sysmsg['done']):
-                if newbits == 1:
-                    c = probplotRGBto1bit(v[1], 2)
-                else:
-                    c = matchRGBtopal(v[1], newpal)
-                intplotvecxypoint(bmp, v[0], c)
+            c = probplotRGBto1bit(v[1], 2) if newbits == 1 else matchRGBtopal(v[1], newpal)
+            intplotvecxypoint(bmp, v[0], c)
         saveBMP(NewBMPfile, bmp)
         print(sysmsg['savemod'] % (
                  Existing24BMPfile,

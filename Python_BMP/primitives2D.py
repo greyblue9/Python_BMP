@@ -61,7 +61,7 @@ def itercirclepart(r: int
     """
     row = r
     col = 0
-    r_sqr = r * r
+    r_sqr = r**2
     _2r_sqr = r_sqr << 1
     _4r_sqr = r_sqr << 2
     d = _2r_sqr * ((row - 1 ) * (row)) + \
@@ -98,7 +98,7 @@ def itercirclepartlineedge(
     """
     row = r
     col = 0
-    r_sqr = r * r
+    r_sqr = r**2
     _2r_sqr = r_sqr << 1
     _4r_sqr = r_sqr << 2
     d = _2r_sqr * ((row - 1) * (row)) + \
@@ -139,7 +139,7 @@ def itercirclepartvertlineedge(
     """
     row = r
     col = 0
-    r_sqr = r * r
+    r_sqr = r**2
     _2r_sqr = r_sqr << 1
     _4r_sqr = r_sqr << 2
     d = _2r_sqr * ((row - 1) * (row)) + \
@@ -247,8 +247,8 @@ def iterellipsepart(b: int, a: int):
     """
     row = b
     col = 0
-    a_sqr = a * a
-    b_sqr = b * b
+    a_sqr = a**2
+    b_sqr = b**2
     _2a_sqr = a_sqr << 1
     _4a_sqr = a_sqr << 2
     _2b_sqr = b_sqr << 1
@@ -469,7 +469,7 @@ def bsplinevert(
 def _bsplineblend(u: float
           ) -> list[float, float,
                     float, float,]:
-    u2,u3= u*u,u*u*u
+    u2,u3 = u**2, u**2 * u
     d,f = u3/6 , 1/6
     a=-d +u2/2-u/2+f
     b= u3/2 -u2 +2/3
