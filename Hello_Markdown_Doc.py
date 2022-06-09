@@ -46,7 +46,7 @@ def meta(f: Callable):
     return "\x0a".join([
       f"### [`{f.__qualname__}`](#{f.__qualname__})",
       "",
-      "```py",
+      "> ```py",
       f"def {f.__name__}{signature(f)}:",
       "```",
       "",

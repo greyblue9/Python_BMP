@@ -2,7 +2,7 @@
 
 ### [`_1bmof`](#_1bmof)
 
-```py
+> ```py
 def _1bmof(bmp: array.array, x: int, y: int) -> int:
 ```
 
@@ -22,7 +22,7 @@ with 1 bit color data given x and y data
 
 ### [`_1bmofhd`](#_1bmofhd)
 
-```py
+> ```py
 def _1bmofhd(bmp: array.array, x: int, y: int) -> int:
 ```
 
@@ -44,7 +44,7 @@ Get the offset in a byte array
 
 ### [`_24bmof`](#_24bmof)
 
-```py
+> ```py
 def _24bmof(bmp: array.array, x: int, y: int) -> int:
 ```
 
@@ -63,7 +63,7 @@ Get the offset in a byte array with RGB data given x and y
 
 ### [`_24bmofhd`](#_24bmofhd)
 
-```py
+> ```py
 def _24bmofhd(bmp: array.array, x: int, y: int) -> int:
 ```
 
@@ -83,7 +83,7 @@ with RGB data given x and y with bmp header
 
 ### [`_4bmof`](#_4bmof)
 
-```py
+> ```py
 def _4bmof(bmp: array.array, x: int, y: int) -> int:
 ```
 
@@ -103,7 +103,7 @@ with 4 bit color data given x and y data
 
 ### [`_4bmofhd`](#_4bmofhd)
 
-```py
+> ```py
 def _4bmofhd(bmp: array.array, x: int, y: int) -> int:
 ```
 
@@ -125,7 +125,7 @@ made due to a header
 
 ### [`_8bmof`](#_8bmof)
 
-```py
+> ```py
 def _8bmof(bmp: array.array, x: int, y: int) -> int:
 ```
 
@@ -146,7 +146,7 @@ with 8 bit color data given x and y data
 
 ### [`_8bmofhd`](#_8bmofhd)
 
-```py
+> ```py
 def _8bmofhd(bmp: array.array, x: int, y: int) -> int:
 ```
 
@@ -169,7 +169,7 @@ made for a bmp header
 
 ### [`_bmmeta`](#_bmmeta)
 
-```py
+> ```py
 def _bmmeta(x: int, y: int, bits: int) -> tuple:
 ```
 
@@ -189,7 +189,7 @@ Computes bitmap meta data
 
 ### [`_BMoffset`](#_BMoffset)
 
-```py
+> ```py
 def _BMoffset(bmp: array.array, x: int, y: int) -> int:
 ```
 
@@ -207,7 +207,7 @@ Returns the offset given a bmp and (x, y) coordinates
 
 ### [`_BMoffsethd`](#_BMoffsethd)
 
-```py
+> ```py
 def _BMoffsethd(bmp: array.array, x: int, y: int) -> int:
 ```
 
@@ -226,7 +226,7 @@ and (x, y) coordinates with header considered
 
 ### [`_cmpimglines`](#_cmpimglines)
 
-```py
+> ```py
 def _cmpimglines(bmp: array.array, x1: int, y1: int, x2: int, y2: int, func: Callable):
 ```
 
@@ -237,7 +237,7 @@ def _cmpimglines(bmp: array.array, x1: int, y1: int, x2: int, y2: int, func: Cal
 
 ### [`_flsz`](#_flsz)
 
-```py
+> ```py
 def _flsz(bmp: array.array) -> int:
 ```
 
@@ -255,7 +255,7 @@ Get the file size of a win bmp
 
 ### [`_fnwithpar2vertslice`](#_fnwithpar2vertslice)
 
-```py
+> ```py
 def _fnwithpar2vertslice(bmp: array.array, x: int, y1: int, y2: int, func: Callable, funcparam):
 ```
 
@@ -277,7 +277,7 @@ Apply a user defined function to vertical slices
 
 ### [`_getbmflsz`](#_getbmflsz)
 
-```py
+> ```py
 def _getbmflsz(x: int, y: int, bits: int) -> int:
 ```
 
@@ -294,7 +294,7 @@ Computes bitmap file size
 
 ### [`_getBMofffunc`](#_getBMofffunc)
 
-```py
+> ```py
 def _getBMofffunc(bmp: array.array):
 ```
 
@@ -312,7 +312,7 @@ in a given bitmap
 
 ### [`_getBMoffhdfunc`](#_getBMoffhdfunc)
 
-```py
+> ```py
 def _getBMoffhdfunc(bmp: array.array):
 ```
 
@@ -330,7 +330,7 @@ with headers in a given bmp
 
 ### [`_getclrbits`](#_getclrbits)
 
-```py
+> ```py
 def _getclrbits(bmp: array.array) -> int:
 ```
 
@@ -347,7 +347,7 @@ Get the bit depth of BMP
 
 ### [`_hdsz`](#_hdsz)
 
-```py
+> ```py
 def _hdsz(bmp: array.array) -> int:
 ```
 
@@ -363,7 +363,7 @@ Get the header size of a BMP
 
 ### [`_pdbytes`](#_pdbytes)
 
-```py
+> ```py
 def _pdbytes(x: int, bits: int) -> int:
 ```
 
@@ -382,7 +382,7 @@ Get the number of bytes used to pad for
 
 ### [`_setflsz`](#_setflsz)
 
-```py
+> ```py
 def _setflsz(bmp: array.array, size: int):
 ```
 
@@ -402,7 +402,7 @@ Set the file size of a BMP
 
 ### [`_sethdsz`](#_sethdsz)
 
-```py
+> ```py
 def _sethdsz(bmp: array.array, hdsize: int):
 ```
 
@@ -422,7 +422,7 @@ Set the header size of a win bmp
 
 ### [`_setmeta`](#_setmeta)
 
-```py
+> ```py
 def _setmeta(bmpmeta: list) -> array.array:
 ```
 
@@ -441,7 +441,7 @@ Creates a new bitmap
 
 ### [`_setx`](#_setx)
 
-```py
+> ```py
 def _setx(bmp: array.array, xmax: int):
 ```
 
@@ -458,7 +458,7 @@ Sets the x value stored in the windows bmp header
 
 ### [`_sety`](#_sety)
 
-```py
+> ```py
 def _sety(bmp: array.array, ymax: int):
 ```
 
@@ -475,7 +475,7 @@ Sets the y value stored in the windows bmp header
 
 ### [`_use24bitfn2reg`](#_use24bitfn2reg)
 
-```py
+> ```py
 def _use24bitfn2reg(bmp: array.array, x1: int, y1: int, x2: int, y2: int, func: Callable, funcparam):
 ```
 
@@ -499,7 +499,7 @@ in a 24-bit bitmap
 
 ### [`_use24btbyrefclrfn2regnsv`](#_use24btbyrefclrfn2regnsv)
 
-```py
+> ```py
 def _use24btbyrefclrfn2regnsv(ExistingBMPfile: str, NewBMPfile: str, x1: int, y1: int, x2: int, y2: int, func: Callable, funcparam):
 ```
 
@@ -525,7 +525,7 @@ to a rectangular area and save
 
 ### [`_use24btclrfn`](#_use24btclrfn)
 
-```py
+> ```py
 def _use24btclrfn(ExistingBMPfile: str, NewBMPfile: str, func: Callable, funcparam):
 ```
 
@@ -549,7 +549,7 @@ to a 24-bit bitmap
 
 ### [`_use24btclrfntocircregion`](#_use24btclrfntocircregion)
 
-```py
+> ```py
 def _use24btclrfntocircregion(ExistingBMPfile: str, NewBMPfile: str, func: Callable, x: int, y: int, r: int):
 ```
 
@@ -572,7 +572,7 @@ to a circular area (24-bit only)
 
 ### [`_use24btclrfnwithpar2circreg`](#_use24btclrfnwithpar2circreg)
 
-```py
+> ```py
 def _use24btclrfnwithpar2circreg(ExistingBMPfile: str, NewBMPfile: str, func: Callable, x: int, y: int, r: int, funcparam):
 ```
 
@@ -597,7 +597,7 @@ to a circular area (24-bit only)
 
 ### [`_use24btfn2circreg`](#_use24btfn2circreg)
 
-```py
+> ```py
 def _use24btfn2circreg(bmp: array.array, x: int, y: int, r: int, func: Callable, funcparam):
 ```
 
@@ -623,7 +623,7 @@ within a 24-bit bitmap
 
 ### [`_use24btfnwithparnsv`](#_use24btfnwithparnsv)
 
-```py
+> ```py
 def _use24btfnwithparnsv(ExistingBMPfile: str, NewBMPfile: str, func: Callable, funcparam):
 ```
 
@@ -645,7 +645,7 @@ Apply a 24-bit only function with parameters and save
 
 ### [`_usebyref24btfn2reg`](#_usebyref24btfn2reg)
 
-```py
+> ```py
 def _usebyref24btfn2reg(bmp: array.array, x1: int, y1: int, x2: int, y2: int, func: Callable, funcparam):
 ```
 
@@ -669,7 +669,7 @@ in a 24-bit bitmap
 
 ### [`_usebyref24btfn2regnsv`](#_usebyref24btfn2regnsv)
 
-```py
+> ```py
 def _usebyref24btfn2regnsv(ExistingBMPfile: str, NewBMPfile: str, x1: int, y1: int, x2: int, y2: int, func: Callable):
 ```
 
@@ -694,7 +694,7 @@ rectangular area and save
 
 ### [`_usebyreffn2regnsv`](#_usebyreffn2regnsv)
 
-```py
+> ```py
 def _usebyreffn2regnsv(ExistingBMPfile: str, NewBMPfile: str, x1: int, y1: int, x2: int, y2: int, func: Callable):
 ```
 
@@ -719,7 +719,7 @@ rectangular region and save
 
 ### [`_usebyreffnsv`](#_usebyreffnsv)
 
-```py
+> ```py
 def _usebyreffnsv(ExistingBMPfile: str, NewBMPfile: str, func: Callable):
 ```
 
@@ -739,7 +739,7 @@ Apply a by-ref function with no parameters and save
 
 ### [`_usebyreffnwithpar2regnsv`](#_usebyreffnwithpar2regnsv)
 
-```py
+> ```py
 def _usebyreffnwithpar2regnsv(ExistingBMPfile: str, NewBMPfile: str, x1: int, y1: int, x2: int, y2: int, func: Callable, funcparam):
 ```
 
@@ -764,7 +764,7 @@ to a rectangular area and save
 
 ### [`_usebyreffnwithparnsv`](#_usebyreffnwithparnsv)
 
-```py
+> ```py
 def _usebyreffnwithparnsv(ExistingBMPfile: str, NewBMPfile: str, func: Callable, funcparam):
 ```
 
@@ -775,7 +775,7 @@ def _usebyreffnwithparnsv(ExistingBMPfile: str, NewBMPfile: str, func: Callable,
 
 ### [`_usebyrefnopar24bitfn2reg`](#_usebyrefnopar24bitfn2reg)
 
-```py
+> ```py
 def _usebyrefnopar24bitfn2reg(bmp: array.array, x1: int, y1: int, x2: int, y2: int, func: Callable):
 ```
 
@@ -796,7 +796,7 @@ Apply a func to a rectangular area in a 24-bit bitmap
 
 ### [`_useclradjfn`](#_useclradjfn)
 
-```py
+> ```py
 def _useclradjfn(ExistingBMPfile: str, NewBMPfile: str, func: Callable, funcparam):
 ```
 
@@ -819,7 +819,7 @@ to an existing bitmap
 
 ### [`_usefn2circreg`](#_usefn2circreg)
 
-```py
+> ```py
 def _usefn2circreg(ExistingBMPfile: str, NewBMPfile: str, func: Callable, x: int, y: int, r: int):
 ```
 
@@ -842,7 +842,7 @@ to a circular area
 
 ### [`_usefn2regsv`](#_usefn2regsv)
 
-```py
+> ```py
 def _usefn2regsv(ExistingBMPfile: str, NewBMPfile: str, x1: int, y1: int, x2: int, y2: int, func: Callable):
 ```
 
@@ -866,7 +866,7 @@ rectangular area and save
 
 ### [`_usefnsv`](#_usefnsv)
 
-```py
+> ```py
 def _usefnsv(ExistingBMPfile: str, NewBMPfile: str, func: Callable):
 ```
 
@@ -886,7 +886,7 @@ Apply a function with no parameters and save
 
 ### [`_usefnwithpar2circreg`](#_usefnwithpar2circreg)
 
-```py
+> ```py
 def _usefnwithpar2circreg(ExistingBMPfile: str, NewBMPfile: str, func: Callable, x: int, y: int, r: int, funcparam):
 ```
 
@@ -911,7 +911,7 @@ to a circular area
 
 ### [`_usenopar24btfn2circreg`](#_usenopar24btfn2circreg)
 
-```py
+> ```py
 def _usenopar24btfn2circreg(bmp: array.array, x: int, y: int, r: int, func: Callable):
 ```
 
@@ -934,7 +934,7 @@ in a 24-bit bitmap
 
 ### [`_usenoparclradjfn`](#_usenoparclradjfn)
 
-```py
+> ```py
 def _usenoparclradjfn(ExistingBMPfile: str, NewBMPfile: str, func: Callable):
 ```
 
@@ -955,7 +955,7 @@ Apply a user provided no parameter color
 
 ### [`_usenoparfn2circreg`](#_usenoparfn2circreg)
 
-```py
+> ```py
 def _usenoparfn2circreg(bmp: array.array, x: int, y: int, r: int, func: Callable):
 ```
 
@@ -980,7 +980,7 @@ center at (x,y) and a radius r
 
 ### [`_xbytes`](#_xbytes)
 
-```py
+> ```py
 def _xbytes(x: int, bits: int) -> int:
 ```
 
@@ -999,7 +999,7 @@ a bmp row given x dimension and bit depth
 
 ### [`_xchrcnt`](#_xchrcnt)
 
-```py
+> ```py
 def _xchrcnt(bmp: array.array) -> int:
 ```
 
